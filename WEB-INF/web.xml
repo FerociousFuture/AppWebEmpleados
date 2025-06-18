@@ -1,0 +1,19 @@
+<web-app>
+    <servlet>
+        <servlet-name>EmpleadoServlet</servlet-name>
+        <servlet-class>EmpleadoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmpleadoServlet</servlet-name>
+        <url-pattern>/empleados</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DepartamentoServlet</servlet-name>
+        <servlet-class>DepartamentoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DepartamentoServlet</servlet-name>
+        <url-pattern>/departamentos</url-pattern>
+    </servlet-mapping>
+</web-app>

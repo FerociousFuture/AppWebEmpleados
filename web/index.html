@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Empleados</title></head>
+<body>
+<h1>Empleados</h1>
+<button onclick="cargarEmpleados()">Mostrar</button>
+<div id="contenido"></div>
+
+<script>
+    function cargarEmpleados() {
+        fetch("/empleados?page=0")
+            .then(res => res.text())
+            .then(data => document.getElementById("contenido").innerText = data);
+    }
+</script>
+</body>
+</html>
